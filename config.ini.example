@@ -93,7 +93,7 @@ daysAhead = 3
  # Maximum number of text lines per calendar item
 maxLines = 3
 
- # Configure calendar provider (currently: Demo / Google)
+ # Configure calendar provider (currently: Demo / Google / Json)
 provider = Demo
 
  # For Google calendar:
@@ -101,6 +101,9 @@ googleCalendars =
     # Get calendar id's together with token.json by running get-google-calendars on your local computer
     primary
     # More calendar id's here
+
+# For Json Calendar, the absolute path to the calendar json file
+jsonFile = calendar.json
 
 [Rain]
 enabled = yes

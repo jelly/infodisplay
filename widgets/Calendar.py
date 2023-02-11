@@ -51,6 +51,9 @@ class Calendar:
         if provider == 'Google':
             from ._calendar_google import Google
             self.provider = Google(cfg)
+        elif provider == 'Json':
+            from ._calendar_json import JsonCalendar
+            self.provider = JsonCalendar(cfg)
         elif provider == 'Demo':
             from ._calendar_demo import Demo
             self.provider = Demo(cfg)
